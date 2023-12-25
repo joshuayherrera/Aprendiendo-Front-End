@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-    <title>Red Social</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cuestoniario</title>
 </head>
 <body>
-    
-    <!--<p>Tiempo del curso: <b>3:00</b></p>-->
-    <a href="https://youtu.be/OWKXEJN67FE?si=4-x9GK31i151U-nf"></a>
-
+    <div class="form-container">
+        <form class="form">
+            <div class="container-inputs">
+                <i class='bx bxs-user'></i><input class="form_input" type="text" placeholder="Name"></div>
+            <div class="container-inputs">
+                <i class='bx bxs-envelope'></i><input class="form_input" type="email" placeholder="Email" required></div>
+            <div class="container-inputs">
+                <i class='bx bxs-message-square message' ></i><textarea class="form_input" placeholder="Write your message here"></textarea></div>
+            <div class="container-inputs">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="img-container">
+            <img src="pngtree-mail-icon-png-image_4723399-removebg-preview.png" alt="">
+        </div>
+    </div>
 </body>
 </html>
