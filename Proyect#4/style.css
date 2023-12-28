@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #f5f5dc;
+}
+
+/*TITULO*/
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px ;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+.planes {
+  margin-top: -90px;
+  display: flex;
+  height: 100svh;
+  justify-content: center;
+  align-items: center;
+}
+
+/*LAS 3 CAJAS*/
+.planes .plans {
+  background: #fff;
+  border-radius: 18px;
+  height: 600px;
+  width: 300px;
+  box-shadow: 2px 10px 20px #000;
+}
+
+/*CAJA BLANCA DE FONDO*/
+.fondo__title {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background: #ffffff;
+  margin: 20px;
+  border-radius: 12px;
+  padding: 20px; 
+}
+
+.fondo__title> h2 {
+  margin: auto;
+}
+
+/*PLAN STANDAR*/
+.planes>.plan__standar{
+  position: relative;
+  background-color: #afe8ef;
+  height: 520px;
+  margin-left: -40em;
+}
+
+/*PARRAFOS*/
+p {
+  font-size: 1.5em;
+  margin: 20px;
+  letter-spacing: 1px;
+}
+
+/*BOTONES*/
+
+.button__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  width: 80%;
+  border-radius: 18px;
+  padding: 14px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #f44e;
+  transition: all .365s ease;
+}
+
+button:hover{
+  background-color: #c64444;
+}
+
+/*PLAN GOLD*/
+.planes>.plan__gold {
+  position: absolute;
+  z-index: 10;
+  width: 360px;
+  background: #e0d55a;
+  text-align: center;
+}
+
+/*PLAN PLUS*/
+.planes>.plan__plus {
+  position: absolute;
+  background-color: #63d8ad;
+  height: 520px;
+  margin-left: 40em;
+}
