@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+body{
+    background-color: #edf9fc;
+} 
+
+/*Apartado de navegación Desktop*/
+nav{
+    background-color: #edf9fc;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+nav a:hover{
+    background-color: #7ba7c498;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+/*Apartado de navegación movil*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+    color: #fff;
+}
+
+.sidebar a:hover{
+    color: #000;
+}
+
+.menu-button{
+    display: none;
+}
+
+.sec-home img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%, 0 0);
+}
+
+.sec-home .promo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Apartado de caja bienvenida*/
+.promo__container {
+    height: 600px;
+    width: 720px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px rgba(255,255,255,0.5);
+    padding: 30px;
+    margin: 20px;
+    margin-top: -50px;
+}
+
+.promo .bienvenido{
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+.promo h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.promo .relleno {
+    font-size: 25px;
+}
+
+.promo .capa {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+/*APARTADO DE SERVICIOS*/
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.servicios__titulo{
+    position: relative;
+    margin-top: -250px;
+}
+
+.servicios__titulo b{
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+}
+
+.servicios__ {
+    margin-top: -170px;
+    font-size: 35px;
+}
+
+.servicios__ img{
+    margin-top: -150px ;
+}
+
+.servicios__:last-child {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.logo:nth-child(2){
+    transition-delay: 250ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 450ms;
+}
+
+img:not(.metalico) {
+    height: 450px;
+    max-width: 650px;
+}
+
+/*Apartado del Footer*/
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(img/background-footer.svg);
+    background-size: cover;
+    
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    height: 80px;
+    width: 50px;
+}
+
+.box__footer .terminos{
+    max-width: 400px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 400;
+    transition: opacity .4s;
+}
+
+.box__footer a:hover{
+    opacity: 0.6;
+}
+
+.box__footer .fab{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.box__copyright b{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*APARTADO DE RESPONSIVE DESIGN*/
+@media(max-width:1200px) {
+    .ocultarEnMovil {
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .promo__container {
+        margin-top: -125px;
+    }
+
+    h1,
+    .h1{
+        text-align: center;
+    }
+
+    .servicios__ .logos img{
+        height: 300px;
+    }
+}
+
+@media(max-width:840px){
+    .promo__container {
+        display: flex;
+        min-width: 300px;
+        max-width: 700px;
+        flex-direction: column;
+        height: 650px;
+        margin-top: -200px;
+    }
+}
+
+@media(max-width:800px) {
+    .promo__container {
+        max-width: 500px;
+    }
+    
+    .promo .bienvenido {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .promo h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 600px){
+    .promo__container{
+        max-width: 400px;
+        height: 670px;  
+        margin-top: -120px;
+    }
+    
+    .promo .bienvenido {
+        font-size: 28px;
+    }
+
+    .promo h1 {
+        font-size: 35px;
+    }
+    
+}
+
+@media(max-width:480px) {
+    .promo__container{
+        height: 650px;
+        max-width: 280px;
+    }
+
+    .promo .bienvenido {
+        font-size: 22px;
+    }
+
+    .promo h1{
+        font-size: 30px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
